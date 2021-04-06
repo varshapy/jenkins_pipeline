@@ -6,8 +6,7 @@ pipeline {
         sh '''
         #!/bin/bash
         echo "this is a script"
-        git pull https://github.com/varshapy/c_code.git
-        cd c_code
+        cd /var/lib/jenkins/workspace/job1
         make
         '''
             }
