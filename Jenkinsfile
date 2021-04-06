@@ -6,8 +6,9 @@ pipeline {
         sh '''
         #!/bin/bash
         echo "this is a script"
-        cd /var/lib/jenkins/workspace/job_java
-        mvn clean install
+        git clone https://github.com/varshapy/c_code.git
+        cd c_code
+        make
         '''
             }
         }
