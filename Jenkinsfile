@@ -6,7 +6,7 @@ pipeline {
         sh '''
         #!/bin/bash
         echo "this is a script"
-        git clone https://github.com/varshapy/c_code.git
+        git pull https://github.com/varshapy/c_code.git
         cd c_code
         make
         '''
